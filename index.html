@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Una carta para ti</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=IM+Fell+English:ital@0;1&family=Special+Elite&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+  <section id="cover" class="screen active">
+    <div class="cover-camera">
+      <div class="dust"></div>
+      <div class="cover-content">
+      <p class="eyebrow">Una pequeña sorpresa</p>
+      <h1>Una carta<br><span>para ti</span></h1>
+      <div class="ornament">✦</div>
+      <p class="cover-subtitle">Hay cosas que merecen ser leídas despacio.</p>
+        <button id="enterBtn" class="main-btn">Entrar</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="envelopeScreen" class="screen">
+    <div class="envelope-camera">
+      <div class="scene">
+      <p class="scene-hint">Hay algo esperando por ti...</p>
+      <div id="envelope" class="envelope">
+        <div class="envelope-shadow"></div>
+        <div class="envelope-body">
+          <div class="envelope-back"></div>
+          <div class="letter-preview">
+            <span class="preview-line"></span>
+            <span class="preview-line short"></span>
+          </div>
+          <div class="envelope-left"></div>
+          <div class="envelope-right"></div>
+          <div class="envelope-front"></div>
+          <div class="flap"></div>
+          <div class="seal">
+            <span>✦</span>
+          </div>
+        </div>
+      </div>
+        <p id="openHint" class="open-hint">Haz clic en el sobre para abrirlo</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="letterScreen" class="screen">
+    <div class="letter-stage">
+      <div class="book" id="book">
+        <div class="paper" id="paper">
+          <div class="paper-noise"></div>
+          <div class="paper-content">
+            <div class="page-number" id="pageNumber"></div>
+            <div id="pageText"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="letter-controls">
+        <button id="prevBtn" class="page-btn" aria-label="Página anterior">‹</button>
+        <span id="progress"></span>
+        <button id="nextBtn" class="page-btn" aria-label="Página siguiente">›</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="finalScreen" class="screen">
+    <div class="final-card">
+      <div class="ornament">✦</div>
+      <p>Gracias por llegar hasta aquí.</p>
+      <h2>Con cariño,<br><span>alguien que te quiere muchísimo.</span></h2>
+      <button id="restartBtn" class="main-btn">Volver a leer</button>
+    </div>
+  </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
